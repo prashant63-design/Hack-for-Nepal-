@@ -1,4 +1,4 @@
-package com.example.yourapp  // Replace with your actual package name
+package com.example.dawaidata
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,12 +6,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dawaidata.UserAdapter
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         // Apply padding for system bars
@@ -27,13 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         // Sample data
         val users = listOf(
-            User( "Alice", "2063-05-02"),
-            User( "Bob", "25"),
-            User( "Charlie", "19")
+            User("Alice", "2063-05-02"),
+            User("Bob", "25"),
+            User("Charlie", "19")
         )
 
         // Set adapter
-        userAdapter = UserAdapter(users)
-        recyclerView.adapter =UserAdapter
+        val userAdapter = UserAdapter(users)
+        recyclerView.adapter = userAdapter
     }
 }

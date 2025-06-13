@@ -14,7 +14,7 @@
         android:padding="12dp">
 
         <EditText
-            android:id=""
+            android:id="@+id/homeSearch"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_box"
@@ -24,7 +24,7 @@
 
         <!-- Notification icon -->
         <ImageView
-            android:id=""
+            android:id="@+id/homeImage"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="12dp"
