@@ -9,7 +9,7 @@
     tools:context=".login.view.LoginActivity">
 
     <LinearLayout
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
@@ -19,21 +19,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:textStyle="bold"/>
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="username"/>
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="username" />
+
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"/>
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="password" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1693C4"
-            android:cornerRadius
+            android:background="@drawable/button_background"
+            android:layout_marginTop="25dp"
+            android:radius="18dp"
             android:text="Log in"
             android:textColor="@color/white" />
     </LinearLayout>
