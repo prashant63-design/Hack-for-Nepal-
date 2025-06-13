@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#1693C4"
-            android:bor
+            android:cornerRadius
             android:text="Log in"
             android:textColor="@color/white" />
     </LinearLayout>
