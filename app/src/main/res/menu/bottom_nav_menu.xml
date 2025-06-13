@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+    android:icon="@drawable/dawai_data_home"
+    android:id="@+id/bottom_nav_home"
+    android:title="Home"/>
+
+    <item
+        android:icon=""
+        android:id="@+id/bottom_nav_report"
+        android:title="Report"/>
+
+    <item
+        android:icon=""
+        android:id="@+id/bottom_nav_scan"
+        android:title="Scan"/>
+
+    <item
+        android:icon=""
+        android:id="@+id/bottom_nav_notification"
+        android:title="Notification"/>
+
+    <item
+        android:icon=""
+        android:id="@+id/bottom_nav_ais"
+        android:title="Ais"/>
+
+</menu>

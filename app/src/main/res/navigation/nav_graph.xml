@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bottom_nav_home">
+
+    <fragment
+        android:id="@+id/bottom_nav_home"
+        android:name="com.example.dawaidata.fragment.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/bottom_nav_report"
+        android:name="com.example.dawaidata.fragment.ReportFragment"
+        android:label="Report" />
+
+    <fragment
+        android:id="@+id/bottom_nav_scan"
+        android:name="com.example.dawaidata.fragment.ScanFragment"
+        android:label="Scan" />
+
+    <fragment
+        android:id="@+id/bottom_nav_notification"
+        android:name="com.example.dawaidata.fragment.NotificationFragment"
+        android:label="Notification" />
+
+    <fragment
+        android:id="@+id/bottom_nav_ais"
+        android:name="com.example.dawaidata.fragment.AisFragment"
+        android:label="Ais" />
+
+</navigation>

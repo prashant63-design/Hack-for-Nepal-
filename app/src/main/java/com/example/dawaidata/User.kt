@@ -1,4 +1,5 @@
 package com.example.dawaidata
-data class User{
-    val name:String
-}
+data class User(
+    val name: String ,
+    val DOE: Int
+)
