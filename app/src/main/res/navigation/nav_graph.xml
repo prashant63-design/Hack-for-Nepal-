@@ -29,4 +29,8 @@
         android:name="com.example.dawaidata.fragment.AisFragment"
         android:label="Ais" />
 
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.dawaidata.fragment.ReportFragment"
+        android:label="Report"/>
 </navigation>

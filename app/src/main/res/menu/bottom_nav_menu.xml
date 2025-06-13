@@ -9,23 +9,22 @@
     android:title="Home"/>
 
     <item
-        android:icon=""
+        android:icon="@drawable/dawai_data_record"
         android:id="@+id/bottom_nav_report"
         android:title="Report"/>
 
     <item
-        android:icon=""
+        android:icon="@mipmap/ic_scan_foreground"
         android:id="@+id/bottom_nav_scan"
         android:title="Scan"/>
 
     <item
-        android:icon=""
+        android:icon="@mipmap/ic_notifciation_foreground"
         android:id="@+id/bottom_nav_notification"
         android:title="Notification"/>
 
     <item
-        android:icon=""
+        android:icon="@mipmap/ic_panda_foreground"
         android:id="@+id/bottom_nav_ais"
         android:title="Ais"/>
-
 </menu>
