@@ -1,10 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ScanFragment">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Details"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/medicineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Medicine Name"
+        android:padding="16dp"
+        android:textSize="16sp"
+       android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textCapWords"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/daysEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="No of Days"
+        android:inputType="number"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/numberOfMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="No of medicines per day"
+        android:focusable="false"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Select Time"
+        android:focusable="false"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp" />
 
 
-
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="28dp" />
+</LinearLayout>

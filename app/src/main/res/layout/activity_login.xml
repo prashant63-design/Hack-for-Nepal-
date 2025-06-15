@@ -21,25 +21,44 @@
             android:text="Login"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email" />
 
         <EditText
             android:id="@+id/loginUsername"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_background"
-            android:layout_marginTop="20dp"
-            android:padding="8dp"
-            android:hint="username" />
+            android:padding="8dp" />
 
-        <EditText
-            android:id="@+id/loginPassword"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Password" />
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="18dp"
-            android:padding="8dp"
-            android:background="@drawable/edit_text_background"
-            android:hint="password" />
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_background">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/loginButton"
@@ -47,10 +66,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
             android:layout_marginTop="25dp"
-            android:radius="18dp"
             android:text="Log in"
             android:textColor="@color/white" />
     </LinearLayout>
-
-
 </RelativeLayout>

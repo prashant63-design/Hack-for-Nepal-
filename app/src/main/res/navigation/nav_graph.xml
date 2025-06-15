@@ -20,11 +20,6 @@
         android:label="Scan" />
 
     <fragment
-        android:id="@+id/bottom_nav_notification"
-        android:name="com.example.dawaidata.fragment.NotificationFragment"
-        android:label="Notification" />
-
-    <fragment
         android:id="@+id/bottom_nav_ais"
         android:name="com.example.dawaidata.fragment.AisFragment"
         android:label="Ais" />

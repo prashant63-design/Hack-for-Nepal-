@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="12dp">
+    android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/nameText"
-        android:layout_width="wrap_content"
+    <!-- Container for text -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- Medicine Name -->
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paracetamol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121" />
 
-    <TextView
-        android:id="@+id/DOEText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DOE"
-        android:textSize="16sp" />
+        <!-- Per day dose info -->
+        <TextView
+            android:id="@+id/medicineCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicines per day: 2"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginTop="4dp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 09:00 AM"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/darker_gray" />
 </LinearLayout>

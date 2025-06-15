@@ -54,7 +54,8 @@ dependencies {
     implementation ("androidx.camera:camera-camera2:1.3.0")
     implementation ("androidx.camera:camera-lifecycle:1.3.0")
     implementation ("androidx.camera:camera-view:1.3.0")
-    implementation  ("com.journeyapps:zxing-android-embedded:4.1.0")
+    implementation ("com.google.firebase:firebase-auth:22.3.1")
     implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
     implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation ("com.google.firebase:firebase-firestore-ktx")
 }

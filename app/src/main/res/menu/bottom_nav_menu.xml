@@ -14,17 +14,12 @@
         android:title="Report"/>
 
     <item
-        android:icon="@mipmap/ic_scan_foreground"
+        android:icon="@drawable/ic_add"
         android:id="@+id/bottom_nav_scan"
-        android:title="Scan"/>
+        android:title="Add"/>
 
     <item
-        android:icon="@mipmap/ic_notifciation_foreground"
-        android:id="@+id/bottom_nav_notification"
-        android:title="Notification"/>
-
-    <item
-        android:icon="@mipmap/ic_panda_foreground"
+        android:icon="@mipmap/ic_notifciation"
         android:id="@+id/bottom_nav_ais"
         android:title="Ais"/>
 </menu>

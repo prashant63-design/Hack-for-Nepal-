@@ -5,15 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
+    android:layout_marginTop="9dp"
     tools:context=".fragment.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="18dp"
         android:padding="12dp">
 
-        <EditText
+        <SearchView
             android:id="@+id/homeSearch"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
@@ -22,7 +24,6 @@
             android:hint="औषधि खोज्नुहोस्"
             android:padding="10dp" />
 
-        <!-- Notification icon -->
         <ImageView
             android:id="@+id/homeImage"
             android:layout_width="48dp"
@@ -33,11 +34,147 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/panda_image"
-        android:layout_width="207dp"
-        android:layout_height="208dp"
-        android:contentDescription="Panda Image"
-        android:scaleType="fitCenter"
-        android:src="@mipmap/ic_panda_foreground" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to HealthyLife"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find medicines, consult doctors, and manage your health easily."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Quick Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/ic_medicine_foreground"
+                android:contentDescription="Order Medicine" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/ic_consult"
+                android:contentDescription="Consult" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/ic_hospital"
+                android:contentDescription="Reports" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Popular Medicines -->
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="12dp"
+                android:src="@mipmap/ic_sitamol"
+                android:scaleType="centerCrop"
+                android:contentDescription="Paracetamol - pain relief"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="12dp"
+                android:src="@mipmap/ic_amlod"
+                android:scaleType="centerCrop"
+                android:contentDescription="Vitamin C supplement"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_sinex"
+                android:contentDescription="Vitamin C supplement" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+<ImageView
+android:id="@+id/heroImage"
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:layout_marginHorizontal="16dp"
+android:layout_marginBottom="12dp"
+android:scaleType="centerCrop"
+android:src="@mipmap/ic_banner_foreground"
+android:contentDescription="Banner" />
+
+    <!-- Video Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch Our Introduction"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp" />
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="16dp" />
 </LinearLayout>
